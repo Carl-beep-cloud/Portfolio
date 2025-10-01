@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="canvas.css" />
+    <script src="canvas.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="exempelfade.css">
+    <link rel="stylesheet" href="recomend.css">
+    <link rel="stylesheet" href="type.css">
+    <link rel="stylesheet" href="included.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="choice.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Labubu Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <a id="Contact"
+            onclick="event.preventDefault(); document.getElementById('form').scrollIntoView({ behavior: 'smooth' });"
+            class="navigation" href="#">Contact</a>
+        <a id="Start"
+            onclick="event.preventDefault(); document.getElementById('canvas').scrollIntoView({ behavior: 'smooth' });"
+            class="navigation selected" href="#">Start</a>
+        <a id="Exempels" class="navigation" href="projects.html">Projects</a>
+    </header>
+
+    <!-- Hero -->
+    <section style="min-height: 100vh;">
+        <div class="canvas-container">
+            <canvas id="canvas"></canvas>
+            <div class="canvas-text canvas-text-left myfade-in">
+                <h3>Welcome to My Labubu World</h3>
+                <p>A playful corner of art, design, and imagination.</p>
+            </div>
+
+            <div class="centeredbuttondiv">
+                <button onclick="document.getElementById('typesection').scrollIntoView({ behavior: 'smooth' });"
+                    class="button-57" role="button">
+                    <span class="text">Explore</span><span>Let’s Go</span>
+                </button>
+            </div>
+
+            <div class="canvas-text canvas-text-right myfade-in">
+                <h3>Portfolio</h3>
+                <div>
+                    <p>Discover my projects, creations, and Labubu-inspired experiments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="recomend" class="recomend-section ">
+        <div class="recomend-content change">
+            <div class="leftside fade-in-left">
+                <div class="space2"></div>
+                <div>
+                    <h1 class="about-title">Labubu </h1>
+                    Labubu Dubai Chocolate is as such cultural phenomenon as it is food. It sits at an intersection: product, art, collectible, social media content.
+
+                    It shows how modern “luxury desserts” are often less about just flavor and more about story, identity, shareability, and exclusivity.
+                    
+                    For many people, trying it is part of the experience: capturing the moment, posting about it, being “in” on the trend.
+                </div>
+            </div>
+
+            <div class="rightside ">
+                <h3 class=" fade-in-right about">About Me</h3>
+                <div class="box fade-in-right">
+                    <h4 class="subtitle">Creative, curious, and Labubu-inspired</h4>
+                    <ul>
+                        <li><strong>Design Lover:</strong> I create playful and unique works influenced by art toys.
+                        </li>
+                        <li><strong>Explorer:</strong> Always experimenting with colors, textures, and styles.</li>
+                        <li><strong>Collector Spirit:</strong> Inspired by Labubu’s whimsical energy.</li>
+                        <li><strong>Storyteller:</strong> I use visuals to craft narratives that spark imagination.</li>
+                        <li><strong>Collaborator:</strong> I thrive in creative teamwork, sharing ideas and building
+                            visions together.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- part 2  -->
+        <div class="recomend-content">
+            <div class="leftside fade-in-left">
+                <h3 class=" fade-in-left about">Education</h3>
+                <div class="box fade-in-left">
+                    <h4 class="subtitle">Creative, curious, and Labubu-inspired</h4>
+                    <ul>
+                        <li><strong>Design Lover:</strong> I create playful and unique works influenced by art toys.
+                        </li>
+                        <li><strong>Explorer:</strong> Always experimenting with colors, textures, and styles.</li>
+                        <li><strong>Collector Spirit:</strong> Inspired by Labubu’s whimsical energy.</li>
+                        <li><strong>Storyteller:</strong> I use visuals to craft narratives that spark imagination.</li>
+                        <li><strong>Collaborator:</strong> I thrive in creative teamwork, sharing ideas and building
+                            visions together.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rightside ">
+                <div class="edu-box fade-in-right">
+                    <div class="edu current">
+                        <span class="edu-text">Gävle högskola - Algebra och Geometri 7,5hp </span>
+                        <span class="edu-status">Current</span>
+                    </div>
+                    <div class="edu current">
+                        <span class="edu-text">Nti Vetenskaps Gymnasiet Gävle - Gymnasie Ingenjör mjukvaru
+                            utvekling</span>
+                        <span class="edu-status">Current</span>
+                    </div>
+                    <div class="edu compelted">
+                        <span class="edu-text">Nti Vetenskaps Gymnasiet Gävle - Teknik informations och media
+                            teknik</span>
+                        <span class="edu-status">Completed</span>
+                    </div>
+
+                    <div class="edu compelted">
+                        <span class="edu-text">Engelska skolan Senior </span>
+                        <span class="edu-status">Completed</span>
+                    </div>
+                    <div class="edu compelted">
+                        <span class="edu-text">Engleksa Skolan Junior</span>
+                        <span class="edu-status">Completed</span>
+                    </div>
+                    <div class="edu compelted">
+                        <span class="edu-text"> Andersberg Skolan</span>
+                        <span class="edu-status">Completed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- part 3 -->
+        <div class="recomend-content change">
+            <div class="leftside">
+
+                <div class="leftside specialfix">
+                    <div class="space"></div>
+                    <div class="lang-box fade-in-left">
+                        <div class="lang">
+                            <span class="lang-text">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    alt="JavaScript">
+                                JavaScript
+                            </span>
+                            <div class="lang-bar">
+                                <div class="lang-progress js"></div>
+                            </div>
+                        </div>
+
+                        <div class="lang">
+                            <span class="lang-text">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    alt="HTML5">
+                                HTML5
+                            </span>
+                            <div class="lang-bar">
+                                <div class="lang-progress html"></div>
+                            </div>
+                        </div>
+
+                      
+                        <div class="lang">
+                            <span class="lang-text">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                    alt="CSS3">
+                                CSS3
+                            </span>
+                            <div class="lang-bar">
+                                <div class="lang-progress css"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="lang">
+                            <span class="lang-text">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                                    alt="C#">
+                                C#
+                            </span>
+                            <div class="lang-bar">
+                                <div class="lang-progress csharp"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="lang">
+                            <span class="lang-text">
+                                <img src="data:image/png;base64,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"
+                                    alt="php">
+                                php
+                            </span>
+                            <div class="lang-bar">
+                                <div class="lang-progress php"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="lang">
+                            <span class="lang-text">
+                                <img src="data:image/jpeg;base64,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"
+                                    alt="C#">
+                                Larvel
+                            </span>
+                            <div class="lang-bar">
+                                <div class="lang-progress laravel"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="lang">
+                            <span class="lang-text">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+                                C
+                            </span>
+                            <div class="lang-bar">
+                                <div class="lang-progress c"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="rightside ">
+                <h3 class=" fade-in-right about">Programming</h3>
+                <div class="box fade-in-right">
+                    <h4 class="subtitle">Languages i know</h4>
+                    <ul>
+                        <li><strong>Design Lover:</strong> I create playful and unique works influenced by art toys.
+                        </li>
+                        <li><strong>Explorer:</strong> Always experimenting with colors, textures, and styles.</li>
+                        <li><strong>Collector Spirit:</strong> Inspired by Labubu’s whimsical energy.</li>
+                        <li><strong>Storyteller:</strong> I use visuals to craft narratives that spark imagination.</li>
+                        <li><strong>Collaborator:</strong> I thrive in creative teamwork, sharing ideas and building
+                            visions together.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="typesection">
+        <div style="height: 20vh;"></div>
+        <div class="typeheader">
+            <h1 id="typesection"> IT Specialist Certifications </h1>
+        </div>
+
+        <div class="card-container">
+            <div class="cert-row">
+            <div class="cert" >
+                <div data-iframe-width="300" data-iframe-height="250"
+                    data-share-badge-id="2df59c95-5a1e-4f8c-9e93-7a5c3629cf51"
+                    data-share-badge-host="https://www.credly.com"></div>
+                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+            </div>
+
+           
+
+            <div class="cert">
+                <div data-iframe-width="300" data-iframe-height="250"
+                    data-share-badge-id="363337c6-77a3-4046-9b8c-3b54331082a1"
+                    data-share-badge-host="https://www.credly.com"></div>
+                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+            </div>
+        </div>
+
+            <div class="loading-text">
+                soon more
+                <span class="dot">.</span>
+                <span class="dot">.</span>
+                <span class="dot">.</span>
+            </div>
+    </section>
+
+    <section id="incsec">
+        <div style="height: 30vh; background: linear-gradient(to bottom, white 0%, #888 50%, black 100%);"></div>
+        <div id="main" class="main">
+            <div class="leftinclude">
+                <div class="box3" id="main2">
+
+                    <!-- Project 1 -->
+                    <h3 class="fade-in">HTTP Server in C</h3>
+                    <h4 class="subtitle fade-in">Low-level systems programming project</h4>
+                    <ul class="fade-in">
+                        <li>Built from scratch using sockets and multi-threading.</li>
+                        <li>Handles GET/POST requests with basic routing.</li>
+                        <li>Lightweight and fast, tested with curl and browsers.</li>
+                    </ul>
+
+                    <!-- Project 2 -->
+                    <h3 class="fade-in">Portfolio Website</h3>
+                    <h4 class="subtitle fade-in">Personal site with Labubu-inspired design</h4>
+                    <ul class="fade-in">
+                        <li>Custom HTML/CSS/JS animations and layout.</li>
+                        <li>Responsive design for desktop and mobile.</li>
+                        <li>Playful styling inspired by collectible art toys.</li>
+                    </ul>
+
+                    <!-- Project 3 -->
+                    <h3 class="fade-in">Game Prototype in Unity</h3>
+                    <h4 class="subtitle fade-in">2D side-scroller experiment</h4>
+                    <ul class="fade-in">
+                        <li>Implemented character movement and physics.</li>
+                        <li>Created unique enemy AI with pathfinding.</li>
+                        <li>Hand-drawn assets and animations.</li>
+                    </ul>
+
+                    <!-- Project 4 -->
+                    <h3 class="fade-in">Machine Learning Experiment</h3>
+                    <h4 class="subtitle fade-in">Image classification with Python</h4>
+                    <ul class="fade-in">
+                        <li>Used TensorFlow/Keras for model training.</li>
+                        <li>Trained on a custom dataset of toy images.</li>
+                        <li>Achieved 90%+ accuracy on test samples.</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="incsec">
+        <div style="background-color: black; height: 30vh;"></div>
+        <div id="form" class="form-container">
+            <h3>Contact</h3>
+            <form action="">
+                <input type="text" placeholder="Your Name" aria-label="Name">
+                <input type="email" placeholder="Your Email" aria-label="Email">
+                <textarea placeholder="Your Message" aria-label="Message"></textarea>
+                <div style="display: flex; justify-content: center;">
+                    <button style="max-width: 80%;" class="button-58" role="button">
+                        <span class="text">Send</span><span>Let’s Go</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
