@@ -1,4 +1,4 @@
-#incsec{
+#incsec {
     background-color: black;
 }
 
@@ -26,9 +26,12 @@
     font-family: 'Arial', sans-serif;
     background-color: black;
     width: 80%;
-    height: auto; /* Changed from 80vh to auto to fit content */
-    min-height: 80vh; /* Ensures minimum height for larger screens */
-    overflow: auto; /* Handles overflow content */
+    height: auto;
+    /* Changed from 80vh to auto to fit content */
+    min-height: 80vh;
+    /* Ensures minimum height for larger screens */
+    overflow: auto;
+    /* Handles overflow content */
 }
 
 .box3 h3 {
@@ -93,7 +96,7 @@
     transform: translateY(-2px);
 }
 
-/* Fade-in animation */
+
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -105,46 +108,133 @@
     transform: translateY(0);
 }
 
-/* Responsive design for mobile devices */
+.title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-row h3 {
+    margin: 0;
+    font-size: 1.9em;
+    font-weight: bold;
+    color: white;
+}
+
+.title-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*    Github icon */
+
+
+.gh-icon-only {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gh-icon-only svg {
+    width: 18px;
+    height: 18px;
+    fill: black;
+    /* visible on dark background */
+    transition: fill 0.3s ease;
+}
+
+.gh-icon-only:hover { /*1.1 */
+    transform: translateY(-3px) scale(1.6) rotate(-6deg);
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.6), 0 0 30px rgba(6, 182, 212, 0.4);
+}
+
+.gh-icon-only:hover svg {
+    fill: #8b5cf6;
+    /* purple accent on hover */
+}
+
+.pulse {
+    animation: pulseGlow 2s infinite;
+  }
+
+
+  @keyframes pulseGlow {
+    0% {
+      box-shadow: 0 0 10px rgba(40, 167, 69, 0.4),  
+                  0 0 18px rgba(72, 187, 120, 0.25); 
+    }
+    50% {
+      box-shadow: 0 0 26px rgba(50, 205, 90, 0.9),  
+                  0 0 40px rgba(120, 255, 170, 0.6); 
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(40, 167, 69, 0.4),   
+                  0 0 18px rgba(72, 187, 120, 0.25);
+    }
+  }
+  
+  /* @keyframes pulseGlow {
+    0% {
+      box-shadow: 0 0 12px rgba(218, 233, 14, 0.4), 0 0 12px rgba(200, 240, 93, 0.2);
+    }
+    50% {
+      box-shadow: 0 0 32px rgba(175, 238, 0, 0.986), 0 0 28px rgba(174, 235, 34, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 12px rgba(2, 240, 42, 0.4), 0 0 12px rgba(23, 243, 60, 0.2);
+    }
+  } */
+
+
+
+
+
 @media screen and (max-width: 768px) {
     .main {
-        flex-direction: column; /* Stack left and right includes vertically */
+        flex-direction: column;
     }
 
-    .leftinclude, .rightinclude {
-        width: 100%; /* Full width on mobile */
+    .leftinclude,
+    .rightinclude {
+        width: 100%;
     }
 
     .box3 {
-        width: 90%; /* Slightly wider on mobile */
-        padding: 20px; /* Reduced padding for smaller screens */
-        min-height: auto; /* Allow natural height */
+        width: 90%;
+        padding: 20px;
+        min-height: auto;
     }
 
     .box3 .subtitle {
-        font-size: 1.1em; /* Smaller subtitle font */
+        font-size: 1.1em;
     }
 
     .box3 ul li {
-        font-size: 0.9em; /* Smaller list item font */
-        padding-left: 20px; /* Adjust bullet spacing */
+        font-size: 0.9em;
+        padding-left: 20px;
     }
 
     .box3 ul li::before {
-        width: 12px; /* Smaller bullet */
+        width: 12px;
         height: 12px;
         top: 3px;
     }
 
     .cta-button {
-        padding: 10px 20px; /* Smaller button padding */
+        padding: 10px 20px;
         font-size: 0.9em;
     }
 }
 
 @media screen and (max-width: 480px) {
     .box3 {
-        width: 95%; /* Almost full width for very small screens */
+        width: 95%;
         padding: 15px;
     }
 
