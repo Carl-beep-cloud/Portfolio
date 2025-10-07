@@ -33,12 +33,13 @@
 .card-container .cert-row {
   display: flex;
   justify-content: center;
-  gap: 30px; /* space between certs */
-  flex-wrap: wrap; /* stack on small screens */
+  gap: 30px; 
+  flex-wrap: wrap;
 }
 
+
 .cert {
-  flex: 0 1 auto; /* prevents stretching */
+  flex: 0 1 auto; 
 }
 
   .loading-text {

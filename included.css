@@ -96,6 +96,33 @@
     transform: translateY(-2px);
 }
 
+.thetitle {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    text-decoration: none; 
+  }
+  
+  .thetitle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; 
+    height: 2px;
+    background-color: #28a745;
+    transition: width 0.8s ease;
+  }
+  
+  .thetitle:hover::after {
+    width: 100%;
+  }
+
+.seemore{
+    font-size: 15px;
+    color: #28a745;
+}
+
 
 .fade-in {
     opacity: 0;

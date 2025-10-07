@@ -74,9 +74,9 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.selected{
+/* .selected{
   text-decoration: underline black solid 2px !important;
-}
+} */
 
 .navigation2{
    text-decoration: none;

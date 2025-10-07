@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="projekt.css">
+    <title>HTTP Server in C - Carl's Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="navigation">Start</a>
+        <a href="index.html#incsec" class="navigation selected">Projects</a>
+        <a href="index.html#form" class="navigation">Contact</a>
+    </header>
+
+    <div class="project-container">
+        <!-- Hero Section -->
+        <div class="project-hero">
+            <div class="title-with-github">
+                <h1>HTTP Server in C</h1>
+                <a href="https://github.com/Fransic-Bacon/C/blob/main/C/GetPostServer/GetPostServer/GetPostServer.c" 
+                   class="gh-icon-only pulse" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   aria-label="View GitHub Repository">
+                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="subtitle">Low-level systems programming project</p>
+            
+           
+        </div>
+
+        <!-- Overview -->
+        <div class="content-box">
+            <h2>Project Overview</h2>
+            <p class="subtitle">Built from scratch using sockets</p>
+            <p> A HTTP server from scratch using only C and low-level socket programming. This project gave me deep insights into how web servers work at the network level.</p>
+            <p>The server handles GET and POST requests with basic routing, and you can decide what file you want to see. It communicates directly with web browsers as clients.</p>
+        </div>
+
+        <!-- Key Features -->
+        <div class="content-box">
+            <h2>Key Features</h2>
+            <p class="subtitle">What makes this project unique</p>
+            <ul>
+                <li><strong>Socket Programming:</strong> Built from scratch using sockets and browser as client</li>
+                <li><strong>Request Handling:</strong> Handles GET/POST requests with basic routing</li>
+                <li><strong>File Selection:</strong> You can decide what file you want to see</li>
+                <li><strong>Pure C:</strong> No frameworks or libraries, just raw C code</li>
+                <li><strong>Network Communication:</strong> Direct TCP/IP socket handling</li>
+            </ul>
+        </div>
+
+        <!-- Technologies -->
+        <div class="content-box">
+            <h2>Technologies Used</h2>
+            <p class="subtitle">Tech stack</p>
+            <div class="tech-stack">
+                <span class="tech-badge">C</span>
+                <span class="tech-badge">Sockets API</span>
+                <span class="tech-badge">HTTP Protocol</span>
+                <span class="tech-badge">TCP/IP</span>
+            </div>
+        </div>
+
+        <!-- Challenges -->
+        <div class="content-box">
+            <h2>Challenges & Learning</h2>
+            <p class="subtitle">What I learned building this</p>
+            <ul>
+                <li><strong>Memory Management:</strong> Working with C required careful attention to memory allocation and preventing leaks</li>
+                <li><strong>Protocol Understanding:</strong> Learning HTTP protocol in depth and implementing request/response parsing from scratch</li>
+                <li><strong>Low-level Networking:</strong> Understanding sockets, ports, and how data travels across networks</li>
+                <li><strong>Systems Programming:</strong> Gained understanding of how servers work under the hood</li>
+            </ul>
+        </div>
+
+        <!-- Code Example -->
+        <div class="content-box">
+            <h2>Code Example</h2>
+            <p class="subtitle">Sample from the project</p>
+            <p>Here's a simplified example of how the server handles incoming connections:</p>
+            <div class="code-block">
+
+                
+	struct sockaddr_in adress;
+
+	adress.sin_family = AF_INET;
+	adress.sin_port = htons(8080);
+	adress.sin_addr.s_addr = INADDR_ANY;
+
+	bind(aSocket, (struct sockaddr*)&adress, sizeof(adress));
+	printf("Socket har blivit bunden till adressen \n");
+
+
+	// max antal clinter
+	int maxclienter = 8;
+	listen(aSocket, maxclienter);
+
+	int theClient = INVALID_SOCKET;
+
+	printf("Servern startar \n \n ");
+
+	char body[1000];
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
