@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <link rel="stylesheet" href="projekt.css">
-    <title>Unity 2D game - Carl's Portfolio</title>
+    <title>Fransic Chat - Carl's Portfolio</title>
 </head>
 <body>
     <header>
@@ -18,8 +18,8 @@
         <!-- Hero Section -->
         <div class="project-hero">
             <div class="title-with-github">
-                <h1>2D game in Unity</h1>
-                <a href="https://github.com/Fransic-Bacon/Flappy-Fransic-Mobile-ny-Version" 
+                <h1>Fransic Chat</h1>
+                <a href="https://github.com/Carl-beep-cloud/Fransic-chat" 
                    class="gh-icon-only pulse" 
                    target="_blank" 
                    rel="noopener noreferrer" 
@@ -30,7 +30,7 @@
                     </svg>
                 </a>
             </div>
-            <p class="subtitle">A 2D video game</p>
+            <p class="subtitle">A social media platform</p>
             
            
         </div>
@@ -38,9 +38,9 @@
         <!-- Overview -->
         <div class="content-box">
             <h2>Project Overview</h2>
-            <p class="subtitle">A Unity schoo project</p>
-            <p>A 2D flappy bird inspired phone game. The game contains 15 different charachters and 3 different worlds.</p>
-            <p>C# is the programing lanaguage that is mostly used during this project.</p>
+            <p class="subtitle">A social media school projekt</p>
+            <p>A social media platform made with laragon,php,html,css and js.</p>
+            <p>Upload posts, make account, follow account and much more.</p>
         </div>
 
         <!-- Key Features -->
@@ -48,8 +48,8 @@
             <h2>Key Features</h2>
             <p class="subtitle">What makes this project unique</p>
             <ul>
-                <li><strong>Not Much to be honest:</strong> My first phone game made in Unity.</li>
-                <li><strong>Unique Art:</strong> The chrachters and obstacles in the game is mostly done by me.</li>
+                <li><strong>Design:</strong> The design is quite special and cant be found anywhere else.</li>
+                <li><strong>Speed:</strong> The loading time was slower then supposed.</li>
                 
             </ul>
         </div>
@@ -59,10 +59,11 @@
             <h2>Technologies Used</h2>
             <p class="subtitle">Tech stack</p>
             <div class="tech-stack">
-                <span class="tech-badge">C#</span>
-                <span class="tech-badge">Unity</span>
-                <span class="tech-badge">Paint 3D</span>
-                <span class="tech-badge">GitHub</span>
+                <span class="tech-badge">PHP</span>
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">JS</span>
+                <span class="tech-badge">Laragon</span>
             </div>
         </div>
 
@@ -71,9 +72,9 @@
             <h2>Challenges & Learning</h2>
             <p class="subtitle">What I learned building this</p>
             <ul>
-                <li><strong>How unity worked:</strong> Working with Unity teached me how to use a game engine to create video games.</li>
-                <li><strong>Mobile Game:</strong> I learn how to make a game application for phones. </li>
-                <li><strong>Physics:</strong> Learned basic physics in Unity</li>
+                <li><strong>Account:</strong> Making accounts and users.</li>
+                <li><strong>Mail:</strong> How to send reset password mails. </li>
+                <li><strong>PHP:</strong> I learn alot about how to use php to get and put data into a database at a larger scale.</li>
                
             </ul>
         </div>
@@ -82,32 +83,34 @@
         <div class="content-box">
             <h2>Code Example</h2>
             <p class="subtitle">Sample from the project</p>
-            <p>Here's a simplified example of how pipes are created in the game:</p>
+            <p>Here's a example of code collecting data for a user profile:</p>
             <div class="code-block">
 
-                public float height;
-
-                private int num;
-            
-            
-                void Update()
-                {
-                   
-            
-                     if (timer > maxTime) 
-                    {
-                        num = Random.Range(1, 6);
-                    }
-            
-                    if (num == 1)
-                    {
-                        GameObject newpipe = Instantiate(slavpipe1); Destroy(newpipe, 10);
-                        newpipe.transform.position = transform.position + new Vector3(0, Random.Range(-height, height), 0);
-                        timer = 0;
-                        num = 0;
-                    }
-            
                 
+$sql = "SELECT id, name, lastname, age, date, description FROM users Where name = ? And lastname = ?";
+$stmt = $dbconn->prepare($sql);
+$stmt->execute([$name, $lastname]);
+$user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if ($user) {
+    $userId = $user['id'];
+    $username = htmlspecialchars($user['name']);
+    $userlastname = htmlspecialchars($user['lastname']);
+    $userage = htmlspecialchars($user['age']);
+
+    @$userdesc = htmlspecialchars($user['description']);
+    $userdate = htmlspecialchars($user['date']);
+}
+
+
+
+if (isset($userId)) {
+    $sql = "SELECT COUNT(*) as comment_count FROM comments WHERE userId = ?";
+    $stmt = $dbconn->prepare($sql);
+    $stmt->execute([$userId]);
+    $commentAmount = $stmt->fetch(PDO::FETCH_ASSOC);
+                
+
 
             </div>
         </div>

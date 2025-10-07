@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <link rel="stylesheet" href="projekt.css">
-    <title>Unity 2D game - Carl's Portfolio</title>
+    <title>Portfolio - Carl's Portfolio</title>
 </head>
 <body>
     <header>
@@ -18,8 +18,8 @@
         <!-- Hero Section -->
         <div class="project-hero">
             <div class="title-with-github">
-                <h1>2D game in Unity</h1>
-                <a href="https://github.com/Fransic-Bacon/Flappy-Fransic-Mobile-ny-Version" 
+                <h1>Portfolio</h1>
+                <a href="https://github.com/Carl-beep-cloud/Portfolio" 
                    class="gh-icon-only pulse" 
                    target="_blank" 
                    rel="noopener noreferrer" 
@@ -30,7 +30,7 @@
                     </svg>
                 </a>
             </div>
-            <p class="subtitle">A 2D video game</p>
+            <p class="subtitle">Portfolio website</p>
             
            
         </div>
@@ -38,9 +38,9 @@
         <!-- Overview -->
         <div class="content-box">
             <h2>Project Overview</h2>
-            <p class="subtitle">A Unity schoo project</p>
-            <p>A 2D flappy bird inspired phone game. The game contains 15 different charachters and 3 different worlds.</p>
-            <p>C# is the programing lanaguage that is mostly used during this project.</p>
+            <p class="subtitle">A personal website</p>
+            <p>A website made in HTML, CSS and Js using (at the moment) hosted on github pages.</p>
+            <p> </p>
         </div>
 
         <!-- Key Features -->
@@ -48,8 +48,8 @@
             <h2>Key Features</h2>
             <p class="subtitle">What makes this project unique</p>
             <ul>
-                <li><strong>Not Much to be honest:</strong> My first phone game made in Unity.</li>
-                <li><strong>Unique Art:</strong> The chrachters and obstacles in the game is mostly done by me.</li>
+                <li><strong>Colorless design:</strong> This project is unique in using moslty black and white.</li>
+                <li><strong>White space:</strong>This website has more whitespace then mostly other websites.</li>
                 
             </ul>
         </div>
@@ -59,10 +59,10 @@
             <h2>Technologies Used</h2>
             <p class="subtitle">Tech stack</p>
             <div class="tech-stack">
-                <span class="tech-badge">C#</span>
-                <span class="tech-badge">Unity</span>
-                <span class="tech-badge">Paint 3D</span>
-                <span class="tech-badge">GitHub</span>
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">JS</span>
+                <span class="tech-badge">GitHub Pages</span>
             </div>
         </div>
 
@@ -71,10 +71,9 @@
             <h2>Challenges & Learning</h2>
             <p class="subtitle">What I learned building this</p>
             <ul>
-                <li><strong>How unity worked:</strong> Working with Unity teached me how to use a game engine to create video games.</li>
-                <li><strong>Mobile Game:</strong> I learn how to make a game application for phones. </li>
-                <li><strong>Physics:</strong> Learned basic physics in Unity</li>
-               
+                <li><strong>New deisgn:</strong> I had a different design then noraml.</li>
+                <li><strong>Has a contact form</strong> Has a contact form</li>
+
             </ul>
         </div>
 
@@ -82,31 +81,52 @@
         <div class="content-box">
             <h2>Code Example</h2>
             <p class="subtitle">Sample from the project</p>
-            <p>Here's a simplified example of how pipes are created in the game:</p>
+            <p>Here's a example of some CSS for the portfolio website:</p>
             <div class="code-block">
 
-                public float height;
+            
 
-                private int num;
-            
-            
-                void Update()
-                {
-                   
-            
-                     if (timer > maxTime) 
-                    {
-                        num = Random.Range(1, 6);
-                    }
-            
-                    if (num == 1)
-                    {
-                        GameObject newpipe = Instantiate(slavpipe1); Destroy(newpipe, 10);
-                        newpipe.transform.position = transform.position + new Vector3(0, Random.Range(-height, height), 0);
-                        timer = 0;
-                        num = 0;
-                    }
-            
+.gallery-item {
+    border: 2px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.gh-icon-only {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 10px;
+}
+
+.gh-icon-only svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: fill 0.3s ease;
+}
+
+
+
+
                 
 
             </div>
