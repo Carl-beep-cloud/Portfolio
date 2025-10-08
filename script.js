@@ -7,6 +7,25 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }, 250);
   });
+
+
+// Headern försvinner och inte
+let lastScrollY = window.scrollY;
+const headern = document.getElementById('navbar');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > lastScrollY + 10) {
+    // Scrolling down
+    headern.classList.add('hidden');
+  } else if (window.scrollY < lastScrollY - 10) {
+    // Scrolling up
+    headern.classList.remove('hidden');
+  }
+  lastScrollY = window.scrollY;
+});
+
+
+
   
   // föpr vänster fad in
   function handleScroll() {
@@ -42,7 +61,8 @@ document.addEventListener("DOMContentLoaded", () => {
   
   function header() {
      main = document.getElementById("main");
-  
+
+     
     let start = document.getElementById("Start");
     let contact = document.getElementById("Contact");
     let exem = document.getElementById("Exempels");
@@ -111,5 +131,4 @@ document.addEventListener("DOMContentLoaded", () => {
                   console.error('Element with ID "main2" not found');
               }
           });
-  
-  
+

@@ -1,9 +1,9 @@
-body{
-    overflow-x: hidden; 
+body {
+  overflow-x: hidden;
 }
 
-p{
-    font-size: 25px;
+p {
+  font-size: 25px;
 }
 
 .canvas-text {
@@ -19,31 +19,30 @@ p{
 /* fadein css */
 .fade-in-left {
   opacity: 0;
-  transform: translateX(-20px); /* Flytta ut elementet lite till vänster */
+  transform: translateX(-20px);
+  /* Flytta ut elementet lite till vänster */
   transition: opacity 0.8s ease-in-out, transform 1.4s ease-in-out;
 }
 
 .fade-in-left.active {
   opacity: 1;
-  transform: translateX(0); /* Flytta elementet tillbaka till sin ursprungliga position */
+  transform: translateX(0);
 }
 
-  .fade-in-right {
-     opacity: 0;
-     transform: translateX(20px);
-     transition: opacity 0.6s ease-out, transform 1.4s ease-out;
-   }
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.6s ease-out, transform 1.4s ease-out;
+}
 
-   .fade-in-right.is-visible {
-     opacity: 1;
-     transform: translateX(0%);
-   }
+.fade-in-right.is-visible {
+  opacity: 1;
+  transform: translateX(0%);
+}
 
-
-/* header */
 
 header {
-  position: fixed;
+  position: fixed;  
   top: 0;
   left: 0;
   width: 100%;
@@ -52,50 +51,63 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  z-index: 1000;
+  z-index: 10000;
+}
+
+header.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
 }
 
 
+
 .navigation {
+
   text-decoration: none;
   color: black;
   padding: 8px 16px;
-  border: 2px solid transparent;
+  /* border: 2px solid black; */
+  background-color: white;
   transition: all 0.3s ease;
   display: inline-block;
+
 }
 
 .navigation:hover {
   text-decoration: none;
   color: black;
-  background-color: white;
-  border: 2px solid black;
+  background-color: transparent;
+  border: 2px solid transparent;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* .selected{
+ .selected{
   text-decoration: underline black solid 2px !important;
-} */
+} 
 
-.navigation2{
-   text-decoration: none;
+.navigation2 {
+  text-decoration: none;
   color: white;
   padding: 8px 16px;
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
-  display: inline-block; 
-}
-.navigation2:hover{
-    text-decoration: none;
-  color: white;
+  /* border: 2px solid white; */
   background-color: black;
-  border: 2px solid white;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgb(255, 254, 254 ,0.1);
+  transition: all 0.3s ease;
+  display: inline-block;
+
 }
 
-.selected2{
+.navigation2:hover {
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  border: 2px solid transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgb(255, 254, 254, 0.1);
+}
+
+.selected2 {
   text-decoration: underline white solid 2px !important;
 }
 

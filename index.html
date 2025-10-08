@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="navbar">
         <a id="Contact"
             onclick="event.preventDefault(); document.getElementById('form').scrollIntoView({ behavior: 'smooth' });"
             class="navigation" href="#">Contact</a>
@@ -29,7 +29,7 @@
             class="navigation selected" href="#">Start</a>
         <a id="Exempels"
             onclick="event.preventDefault(); document.getElementById('incsec').scrollIntoView({ behavior: 'smooth' });"
-            class="navigation selected" href="#">Projects</a>
+            class="navigation" href="#">Projects</a>
     </header>
 
     <!-- Hero -->
@@ -478,7 +478,7 @@
                         <input type="email" name="email" placeholder="Your Email">
                         <textarea placeholder="Your Message" name="message"></textarea>
                     <button style="max-width: 50%; margin-left: 25%;" class="button-58" role="button" type="submit">
-                        <span class="text">Send</span><span>Let’s Go</span>
+                        <span class="text">Send</span><span>email</span>
                     </button>
                 </form>
 
