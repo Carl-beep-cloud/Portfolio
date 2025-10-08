@@ -76,7 +76,7 @@ header.hidden {
 
 .navigation:hover {
   text-decoration: none;
-  color: black;
+  color: black; 
   background-color: transparent;
   border: 2px solid transparent;
   transform: translateY(-2px);
@@ -111,11 +111,6 @@ header.hidden {
   text-decoration: underline white solid 2px !important;
 }
 
-
-
-
-
-/* Dont show class */
 .dontshow {
   display: none;
 }
